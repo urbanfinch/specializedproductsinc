@@ -31,6 +31,12 @@ p.featured {
   margin-top: -30px;
 }
 
+p.featured > span.spacer {
+  display: block;
+  height: 1px;
+  margin-top: -13px;
+}
+
 img.home_photo {
   display: none;
   width: 380px;
