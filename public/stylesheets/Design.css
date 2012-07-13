@@ -1,0 +1,337 @@
+﻿body 
+{
+	background-color:#DEDAD7;
+	font-family:Tahoma;
+	color:#A27B7A;
+	margin:0px;
+}
+
+p
+{
+	line-height:23px;
+	padding:10px;
+	font-size:16px;
+}
+
+a, a:link, a:visited, a:active
+{
+	color: #A27B7A;
+}
+
+a:hover
+{
+	color:#DBA8A8;
+}
+
+#divContainer
+{
+	width:980px; /* used to be 1190 - difference of 210 */
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#divTopBar
+{
+	height:118px;
+	margin-top:-1px;
+	margin-bottom:0px;
+	background-image:url('/images/allslides.jpg');
+	background-position: left 0px;
+}
+
+#divTopBar a
+{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+#divMainBlock
+{
+	/* background color, image repeat-x here */	
+	background:url('/images/topgradient.png') repeat-x;
+	background-position: center 0px;
+}
+
+#divMainContent
+{
+	height:492px;
+	background-image:url('/images/main-bg.jpg');
+	background-position:center bottom; 
+	margin-left:auto;
+	margin-right:auto;
+	background-repeat:no-repeat;
+	position:relative;
+}
+
+#ulMenu
+{
+	position:absolute;
+	left:160px;
+	bottom:0px;
+	margin-left:10px;
+	margin-top:0px;
+	height:52px;
+}
+
+#ulMenu li
+{
+	list-style-type:none;
+	display:inline;
+	float:left;
+	margin-left:0px;
+	background:url('/images/tabslice-right-long.png') right;
+	height:52px;
+}
+
+#ulMenu li a
+{
+	text-decoration:none;
+	font-size:15px;
+	padding-left:23px;
+	padding-right:23px;
+	padding-top:7px;
+	display:block;
+	font-weight:bold;
+	background:url('/images/tabslice-left.png') no-repeat;
+	height:52px;
+}
+
+#divLeftArrow, #divRightArrow
+{
+	position:absolute;
+	top:135px;
+	width:44px;
+	height:129px;
+	background-repeat:no-repeat;
+}
+
+#divLeftArrow
+{
+	left:6px;
+	background:url('/images/leftarrow.png');
+}
+
+#divRightArrow
+{
+	right:7px;
+	background:url('/images/rightarrow.png');
+}
+
+#divLeftArrow a, #divRightArrow a
+{
+	display:block;
+	width:44px;
+	height:129px;
+}
+
+#divLeft
+{
+	position:absolute;
+	top:40px;
+	left:74px;
+	width:375px;
+	
+}
+
+#divRight
+{
+	position:absolute;
+	top:40px;
+	right:60px;
+	width:460px;
+}
+
+#divEmpHolder
+{
+	position:absolute;
+	left:64px;
+	width:980px;
+	height:420px;
+	overflow:hidden;
+}
+
+.cEmp, .cProj, .cProduct /* needed for animations */
+{
+	float:left;
+	width:980px;
+	height:420px;
+	
+}
+
+.cEmp .cPic
+{
+	position:absolute;
+	top:20px;
+	left:16px;
+}
+
+.cEmp .cPic img
+{
+	height:370px;
+}
+
+.cEmp .cName
+{
+	position:absolute;
+	top:40px;
+	left: 325px;
+	font-size:18px;
+	font-weight:bold;
+	background:url('/images/dot-thing.png') no-repeat left;
+	padding-left:18px;
+}
+
+.cEmp .cEmail
+{
+	position:absolute;
+	top:40px;
+	left:630px;
+	background:url('/images/dot-thing.png') no-repeat left;
+	padding-left:18px;
+}
+
+.cEmp .cDescription
+{
+	position:absolute;
+	top:70px;
+	left:334px;
+	width: 520px;
+}
+
+#divProjHolder
+{
+	position:absolute;
+	top:20px;
+	left:65px;
+	width:862px;
+	height:400px;
+	overflow:hidden;
+}
+
+.cProj .cTitle
+{
+	position:absolute;
+	top:20px;
+	left:-3px;
+	background:url('/images/dot-thing.png') no-repeat 3px;
+	padding-left:18px;
+	font-size:18px;
+}
+
+.cProj .cPic
+{
+	position:absolute;
+	top:50px;
+	left:16px;
+	height:310px;
+	padding:0px;
+	background-color:#999;
+}
+
+.cProj .cPic img
+{
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+.cProj .cProjName
+{
+	position:absolute;
+	top:50px;
+	left:460px;
+}
+
+.cProj .cProjName .cClient
+{
+	/*background:url('/images/dot-thing.png') no-repeat left;
+	margin-left:3px;
+	padding-left:23px;*/
+	font-size:1.3em;
+}
+
+.cProj .cProjDetails
+{
+	position:absolute;
+	top:70px;
+	left:460px;
+}
+
+.cProj .cProjDetails *
+{
+	font-size:.9em;
+	
+}
+
+.cProj .cProjDetails p
+{
+	padding-left:0px;
+	
+}
+
+.cProduct ul
+{
+	margin-left:8px;
+	width:400px;
+	float:left;
+}
+
+.cProduct li
+{
+	list-style-type:none;
+	font-size:20px;
+	margin-left:0px;
+}
+
+.cProduct .cDescription
+{
+	display:block;
+	color:#bbb;
+	margin-left:18px;
+	font-size:17px;
+	text-transform:lowercase;
+}
+
+#divTextHolder, .cTextHolder
+{
+	position:absolute;
+	top:20px;
+	left:84px;
+	width:822px;
+	height:400px;
+	overflow:hidden;
+}
+
+#divTextHolder h1, .cTextHolder h1
+{
+	font-weight:normal;
+	background:url('/images/dot-thing.png') no-repeat left;
+	padding-left:18px;
+	
+}
+
+#divTextHolder p, .cTextHolder p
+{
+	margin-left:9px;
+}
+
+
+#divTextHolder .cContact, .cTextHolder .cContact
+{
+	background:url('/images/dot-thing.png') no-repeat 4px left;
+	padding-left:18px;
+	margin-bottom:10px;
+}
+
+.cContactLeft, .cContactRight
+{
+	position:absolute;
+	top:50px;
+	width:461px;
+}
+
+.cContactRight
+{
+	left:461px;
+}
