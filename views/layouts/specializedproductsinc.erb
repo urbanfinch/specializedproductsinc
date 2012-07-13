@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Specialized Products, Inc.</title>
-    <link href="/stylesheets/Reset.css" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/Base.css" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/Design.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/base.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/design.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="divContainer">
@@ -126,6 +126,15 @@
       
       glowOff();
       
+      var photo = 0;
+      var photo_interval = window.setInterval(function() {
+        $('img.home_photo').eq(photo).fadeOut(1000, function() {
+          $('img.home_photo').hide();
+          photo += 1;
+          if (photo >= 5) { photo = 0; };
+          $('img.home_photo').eq(photo).fadeIn(1000);
+        });
+      }, 8000);
             
         });
     </script>

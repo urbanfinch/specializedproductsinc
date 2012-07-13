@@ -23,6 +23,24 @@ a:hover
 	color:#DBA8A8;
 }
 
+p.home_paragraph {
+  font-size: 12px;
+}
+
+p.featured {
+  margin-top: -30px;
+}
+
+img.home_photo {
+  display: none;
+  width: 380px;
+  max-height: 364px;
+}
+
+img.home_photo:first-child {
+  display: block;
+}
+
 #divContainer
 {
 	width:980px; /* used to be 1190 - difference of 210 */
