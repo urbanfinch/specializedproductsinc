@@ -13,14 +13,26 @@ class SpecializedProductsInc < Sinatra::Base
   end
   
   get '/:section/?' do
-    erb "#{params[:section]}/#{params[:section]}".to_sym
+    begin
+      erb "#{params[:section]}/#{params[:section]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/:section/:subsection/?' do
-    erb "#{params[:section]}/#{params[:subsection]}/#{params[:subsection]}".to_sym
+    begin
+      erb "#{params[:section]}/#{params[:subsection]}/#{params[:subsection]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/*' do
+    redirect '/'
+  end
+  
+  not_found do
     redirect '/'
   end
 end
